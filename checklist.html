@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ECFDFC; 
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-family: 'Kavoon', cursive;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 50px;
+            height: auto;
+            margin-left: 15px;
+        }
+        .title {
+            font-size: 2rem;
+            color: black;
+            text-align: center;
+        }
+        .checklist-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            background-color: #D9FFF9;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .column h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #004d99;
+        }
+        .task {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .task input[type="text"] {
+            flex: 1;
+            margin-left: 10px;
+            padding: 5px;
+            border: 1px solid #E9EBE7;
+            border-radius: 5px;
+        }
+        .divider {
+            width: 2px;
+            background-color: #004d99;
+        }
+
+        .btn-back {
+            margin: 20px;
+            background-color: #30A393;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Título e imagen -->
+    <div class="header">
+        <h1 class="title">Checklist</h1>
+        <img src="check.png" alt="Icono">
+    </div>
+
+    <!-- Contenedor de columnas -->
+    <div class="checklist-container">
+        <!-- Columna izquierda -->
+        <div class="column">
+            <h2>Urgente !</h2>
+            <div class="task">
+                <input type="checkbox">
+                <input type="text" placeholder="Escriba aquí...">
+            </div>
+            <div class="task">
+                <input type="checkbox">
+                <input type="text" placeholder="Escriba aquí...">
+            </div>
+            <div class="task">
+                <input type="checkbox">
+                <input type="text" placeholder="Escriba aquí...">
+            </div>
+        </div>
+
+        <!-- Línea divisora -->
+        <div class="divider"></div>
+
+        <!-- Columna derecha -->
+        <div class="column">
+            <h2>Aplazable</h2>
+            <div class="task">
+                <input type="checkbox">
+                <input type="text" placeholder="Escriba aquí...">
+            </div>
+            <div class="task">
+                <input type="checkbox">
+                <input type="text" placeholder="Escriba aquí...">
+            </div>
+            <div class="task">
+                <input type="checkbox">
+                <input type="text" placeholder="Escriba aquí...">
+            </div>
+        </div>
+    </div>
+
+    <a href="dashboard.html" class="btn-back">Volver</a>
+
+</body>
+</html>

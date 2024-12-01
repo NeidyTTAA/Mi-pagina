@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ECFDFC; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Kavoon', cursive; 
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: black;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* columnas */
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .calendar div {
+            text-align: center;
+            padding: 10px;
+            background-color: #D9FFF9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .calendar-header {
+            font-weight: bold;
+            background-color: #30A393;
+            color: black;
+        }
+        .calendar-day {
+            height: 50px;
+        }
+
+        .btn-back {
+            margin: 20px;
+            background-color: #30A393;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calendario</h1>
+    <div class="calendar">
+        <!-- Encabezados -->
+        <div class="calendar-header">Lun</div>
+        <div class="calendar-header">Mar</div>
+        <div class="calendar-header">Mié</div>
+        <div class="calendar-header">Jue</div>
+        <div class="calendar-header">Vie</div>
+        <div class="calendar-header">Sáb</div>
+        <div class="calendar-header">Dom</div>
+
+        <!-- Días -->
+        <div class="calendar-day">1</div>
+        <div class="calendar-day">2</div>
+        <div class="calendar-day">3</div>
+        <div class="calendar-day">4</div>
+        <div class="calendar-day">5</div>
+        <div class="calendar-day">6</div>
+        <div class="calendar-day">7</div>
+        <div class="calendar-day">8</div>
+        <div class="calendar-day">9</div>
+        <div class="calendar-day">10</div>
+        <div class="calendar-day">11</div>
+        <div class="calendar-day">12</div>
+        <div class="calendar-day">13</div>
+        <div class="calendar-day">14</div>
+        <div class="calendar-day">15</div>
+        <div class="calendar-day">16</div>
+        <div class="calendar-day">17</div>
+        <div class="calendar-day">18</div>
+        <div class="calendar-day">19</div>
+        <div class="calendar-day">20</div>
+        <div class="calendar-day">21</div>
+        <div class="calendar-day">22</div>
+        <div class="calendar-day">23</div>
+        <div class="calendar-day">24</div>
+        <div class="calendar-day">25</div>
+        <div class="calendar-day">26</div>
+        <div class="calendar-day">27</div>
+        <div class="calendar-day">28</div>
+        <div class="calendar-day">29</div>
+        <div class="calendar-day">30</div>
+    </div>
+    <a href="dashboard.html" class="btn-back">Volver</a>
+
+</body>
+</html>
+
+
